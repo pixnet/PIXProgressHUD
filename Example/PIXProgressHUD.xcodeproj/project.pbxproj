@@ -23,6 +23,10 @@
 		72602082FA745187C5DFCBAC /* Pods_PIXProgressHUD_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF4F8ECB755DBF0229DC71A /* Pods_PIXProgressHUD_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		85C63E1B658C37BDBF1DA15D /* Pods_PIXProgressHUD_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79472885472CBEA2EEB2800D /* Pods_PIXProgressHUD_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		CEC75BB11B69F8F600B47EED /* PIXProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC75BB01B69F8F600B47EED /* PIXProgressHUD.m */; };
+		CEC75BB61B69F94F00B47EED /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC75BB31B69F94F00B47EED /* QCMethod.m */; };
+		CEC75BB71B69F94F00B47EED /* PIXBubbleDiffuseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC75BB41B69F94F00B47EED /* PIXBubbleDiffuseView.m */; };
+		CECEE15B1B6B153E00FD73EA /* colorful.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CECEE15A1B6B153E00FD73EA /* colorful.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 		16AAC2272C935E5AF9C602FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3E0D1517C9F0D4125FEA00B4 /* Pods-PIXProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIXProgressHUD_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PIXProgressHUD_Example/Pods-PIXProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		527984094EE4BE305662FCE1 /* Pods-PIXProgressHUD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIXProgressHUD_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PIXProgressHUD_Tests/Pods-PIXProgressHUD_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* PIXProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PIXProgressHUD.app; path = PIXProgressHUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* PIXProgressHUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIXProgressHUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,7 +57,7 @@
 		6003F5A5195388D20070C39A /* PIXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIXViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* PIXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIXViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = PIXProgressHUD_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* PIXProgressHUD_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIXProgressHUD_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -64,6 +68,13 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A0A612EB2B1FA8BB983A1202 /* Pods-PIXProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIXProgressHUD_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PIXProgressHUD_Example/Pods-PIXProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AEF4F8ECB755DBF0229DC71A /* Pods_PIXProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIXProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC75BAF1B69F8F600B47EED /* PIXProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PIXProgressHUD.h; path = ../Pod/Classes/PIXProgressHUD.h; sourceTree = "<group>"; };
+		CEC75BB01B69F8F600B47EED /* PIXProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PIXProgressHUD.m; path = ../Pod/Classes/PIXProgressHUD.m; sourceTree = "<group>"; };
+		CEC75BB21B69F94F00B47EED /* PIXBubbleDiffuseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PIXBubbleDiffuseView.h; path = ../Pod/Classes/PIXBubbleDiffuseView.h; sourceTree = "<group>"; };
+		CEC75BB31B69F94F00B47EED /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCMethod.m; path = ../Pod/Classes/QCMethod.m; sourceTree = "<group>"; };
+		CEC75BB41B69F94F00B47EED /* PIXBubbleDiffuseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PIXBubbleDiffuseView.m; path = ../Pod/Classes/PIXBubbleDiffuseView.m; sourceTree = "<group>"; };
+		CEC75BB51B69F94F00B47EED /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCMethod.h; path = ../Pod/Classes/QCMethod.h; sourceTree = "<group>"; };
+		CECEE15A1B6B153E00FD73EA /* colorful.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = colorful.jpg; path = ../Pod/Assets/colorful.jpg; sourceTree = "<group>"; };
 		F3AD22BCC684E555098116CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +107,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				CEC75BA81B69F8B100B47EED /* Classes */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for PIXProgressHUD */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -108,8 +120,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* PIXProgressHUD.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* PIXProgressHUD_Example.app */,
+				6003F5AE195388D20070C39A /* PIXProgressHUD_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +194,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		CEC75BA81B69F8B100B47EED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CECEE15A1B6B153E00FD73EA /* colorful.jpg */,
+				CEC75BB21B69F94F00B47EED /* PIXBubbleDiffuseView.h */,
+				CEC75BB31B69F94F00B47EED /* QCMethod.m */,
+				CEC75BB41B69F94F00B47EED /* PIXBubbleDiffuseView.m */,
+				CEC75BB51B69F94F00B47EED /* QCMethod.h */,
+				CEC75BAF1B69F8F600B47EED /* PIXProgressHUD.h */,
+				CEC75BB01B69F8F600B47EED /* PIXProgressHUD.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		E5FE0F5B1275A5290CF39555 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +239,7 @@
 			);
 			name = PIXProgressHUD_Example;
 			productName = PIXProgressHUD;
-			productReference = 6003F58A195388D20070C39A /* PIXProgressHUD.app */;
+			productReference = 6003F58A195388D20070C39A /* PIXProgressHUD_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* PIXProgressHUD_Tests */ = {
@@ -234,7 +260,7 @@
 			);
 			name = PIXProgressHUD_Tests;
 			productName = PIXProgressHUDTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* PIXProgressHUD_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -277,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				CECEE15B1B6B153E00FD73EA /* colorful.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -391,6 +418,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* PIXAppDelegate.m in Sources */,
+				CEC75BB61B69F94F00B47EED /* QCMethod.m in Sources */,
+				CEC75BB11B69F8F600B47EED /* PIXProgressHUD.m in Sources */,
+				CEC75BB71B69F94F00B47EED /* PIXBubbleDiffuseView.m in Sources */,
 				6003F5A7195388D20070C39A /* PIXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -515,6 +545,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIXProgressHUD/PIXProgressHUD-Prefix.pch";
 				INFOPLIST_FILE = "PIXProgressHUD/PIXProgressHUD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -530,6 +561,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIXProgressHUD/PIXProgressHUD-Prefix.pch";
 				INFOPLIST_FILE = "PIXProgressHUD/PIXProgressHUD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

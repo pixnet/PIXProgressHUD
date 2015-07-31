@@ -1,0 +1,6 @@
+framework module PIXProgressHUD {
+  umbrella header "PIXProgressHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}
